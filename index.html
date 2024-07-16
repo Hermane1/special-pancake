@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the webpage is responsive -->
+    <title>CRUD Blog App</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>CRUD Blog App</h1> <!-- Main header of the application -->
+    </header>
+
+    <main>
+        <section id="post-form">
+            <h2>Create a Post</h2> <!-- Section header for creating a post -->
+            <form id="new-post-form"> <!-- Form for creating a new post -->
+                <input type="text" id="author" placeholder="Author" required> <!-- Input field for the author's name -->
+                <textarea id="content" placeholder="Write your post..." maxlength="280" required></textarea> <!-- Text area for the post content with a character limit -->
+                <input type="text" id="tags" placeholder="Tags (comma separated)"> <!-- Input field for tags -->
+                <button type="submit">Post</button> <!-- Submit button for the form -->
+            </form>
+        </section>
+
+        <section id="posts">
+            <h2>Posts</h2> <!-- Section header for displaying posts -->
+            <div id="search">
+                <input type="text" id="search-input" placeholder="Search posts by keyword"> <!-- Input field for searching posts -->
+            </div>
+            <ul id="post-list"></ul> <!-- Unordered list to display posts -->
+        </section>
+    </main>
+
+    <script src="utils.js"></script> <!-- Links to the utility JavaScript file -->
+    <script src="script.js"></script> <!-- Links to the main JavaScript file -->
+</body>
+</html>

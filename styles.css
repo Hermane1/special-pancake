@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif; /* Sets the font family for the body */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Sets flex direction to column */
+    align-items: center; /* Centers items horizontally */
+}
+
+header {
+    background-color: #333; /* Sets background color of the header */
+    color: white; /* Sets text color to white */
+    padding: 1rem; /* Adds padding */
+    width: 100%; /* Sets width to 100% */
+    text-align: center; /* Centers text */
+}
+
+main {
+    width: 90%; /* Sets width to 90% */
+    max-width: 800px; /* Sets maximum width */
+    margin-top: 2rem; /* Adds top margin */
+}
+
+form {
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Sets flex direction to column */
+}
+
+input, textarea, button {
+    margin: 0.5rem 0; /* Adds vertical margin */
+    padding: 0.5rem; /* Adds padding */
+    font-size: 1rem; /* Sets font size */
+}
+
+#post-list {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+
+.post {
+    background-color: #f4f4f4; /* Sets background color of posts */
+    margin: 1rem 0; /* Adds vertical margin */
+    padding: 1rem; /* Adds padding */
+    border-radius: 5px; /* Rounds corners */
+}
+
+.post button {
+    margin-left: 0.5rem; /* Adds left margin */
+}
